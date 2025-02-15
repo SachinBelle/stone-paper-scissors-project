@@ -34,6 +34,7 @@
     border-radius: 50px;
 }
 .option:hover{
+    cursor: pointer;
     border: 10px solid rgb(108, 98, 98);
 }
 .rock_bt{
@@ -99,17 +100,19 @@
     justify-content: center;
 }
 .title{
-    grid-column-start: 2;
-    height: 30px;
-    width: 100px;
+    grid-column-start: 1;
+    grid-column-end:4 ;
+    height: 50px;
+ 
     background-color: rgb(120, 120, 176);
     color: white;
     border: none;
     text-align: center;
-    font-weight: bold;
+    font-size: xx-large;
+    font-weight: bolder;
     padding-top: 5px;
-    margin-left: 20px;
-    margin-right: 20px;
+    
+    
     border-radius: 0px 0px 10px 10px;
 }
 #player_move{
@@ -127,6 +130,7 @@
     justify-content: center;
  }
 .reset{
+    cursor: pointer;
     background-color: rgb(120, 120, 176);
     color: white;
     height: 30px;
@@ -139,3 +143,16 @@
     margin-left: 30px;
     margin-top: 1px;
  }
+ .exit_game {
+    cursor: pointer;
+    height: 30px;
+    background-color: rgb(120, 120, 176);
+    color: white;
+    display: flex; /* Can keep inline-flex if needed */
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto; /* Centers it horizontally */
+    width: fit-content; /* Ensures the button doesn't stretch */
+    border: none;
+
+}
